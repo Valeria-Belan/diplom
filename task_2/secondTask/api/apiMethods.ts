@@ -1,6 +1,6 @@
 import superagent, { Response } from 'superagent';
 
-const baseUrl = 'https://jsonplaceholder.typicode.com/posts';
+const baseUrl = 'https://jsonplaceholder.typicode.com';
 
 async function handleResponse(response: Response, exspectedStatusCode: number) {
     expect(response.statusCode).toBe(exspectedStatusCode);
