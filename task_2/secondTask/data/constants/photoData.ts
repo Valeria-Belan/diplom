@@ -352,7 +352,6 @@ export const expectedPhotos: IPhoto[] = [
         thumbnailUrl: 'https://via.placeholder.com/150/847294',
     },
 ];
-
 export const expectedOnePhoto = {
     albumId: 1,
     id: 34,
@@ -360,7 +359,6 @@ export const expectedOnePhoto = {
     url: 'https://via.placeholder.com/600/35185e',
     thumbnailUrl: 'https://via.placeholder.com/150/35185e',
 };
-
 export const newPhoto: IPhoto = {
     albumId: 101,
     title: 'this is a photo for testing',

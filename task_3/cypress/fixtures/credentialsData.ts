@@ -3,7 +3,7 @@ export const userToken =
 export const emailLogin: string = 'diplom_cypressTest@proton.me'; //для страницы логинизации
 export const passwordLogin: string = 'Qwerty+123='; //для страницы логинизации
 
-export const emailRegister: string = 'belanlera@mail.ru'; //для страницы регистрации
+export const emailRegister: string = 'testLogin2024@mail.ru'; //для страницы регистрации
 export const passwordRegister: string = 'Vbn+756PI=@q'; //для страницы регистрации
 
 export const enterTitle: string = 'Вход'; //для страницы регистрации

@@ -23,20 +23,13 @@ describe('Photos testing', () => {
         console.log(actualPhotosByPhotoID);
         expect(actualPhotosByPhotoID).toEqual(expectedOnePhoto);
     });
-
     it('3 - User can post new photo', async () => {
         //Пользователь может загрузить новое фото
         const newPhotoCreation = await uploadNewPhoto(newPhoto);
         console.log(newPhotoCreation);
         expect(newPhotoCreation.albumId).toEqual(101);
     });
-
-    //     it('4 - User can post new photo', async () => {
-    //         //Пользователь не может загрузить новое фото, не указав albumId
-    //         //!!! Загрузка фото проходит, не указав albumId
-    //     });
-
-    it('5 - User can post new photo', async () => {
+    it('4 - User can post new photo', async () => {
         //Пользователь не может загрузить новое фото, указав Id несуществующего альбома
         const invalidPhotoId = await getPhotosByPhotoID(5003).catch((error) => {
             console.log(error.status);

@@ -5,7 +5,6 @@ export const expectedAlbum: IAlbum = {
     id: 7,
     title: 'quibusdam autem aliquid et et quia',
 };
-
 export const expectedAlbumsByUserId: IAlbum[] = [
     {
         userId: 7,
@@ -58,7 +57,6 @@ export const expectedAlbumsByUserId: IAlbum[] = [
         title: 'et deleniti unde',
     },
 ];
-
 export const newAlbum: IAlbum = {
     userId: 3,
     title: 'this is an album for testing',

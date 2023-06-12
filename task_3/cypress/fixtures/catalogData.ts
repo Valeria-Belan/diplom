@@ -1,9 +1,0 @@
-export const titlePageRent: string = 'Аренда';
-export const roomText: string = 'Комната';
-export const twoRoom: string = '2к';
-export const enterMaxPrice: string = '500';
-// export const expectedFisrtCount = 3738;
-// export const expectedSecondCount = 3191;
-// export const expectedThirdCount = 1216;
-// export const expectedPriceCount = 951;
-export const textFlatBefore: string = 'Грушевская, 106';

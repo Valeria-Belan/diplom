@@ -1,20 +1,17 @@
 import { IComment, IPost } from '../../data/models/postModel';
 
 export const newTitle: string = 'Update a title of created post';
-
 export const expectedPost: IPost = {
     userId: 1,
     id: 1,
     title: 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit',
     body: 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto',
 };
-
 export const newPost: IPost = {
     userId: 1,
     title: 'test title for post',
     body: 'test body for post',
 };
-
 export const expectedUserId: IPost[] = [
     {
         userId: 10,
@@ -77,7 +74,6 @@ export const expectedUserId: IPost[] = [
         body: 'cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut',
     },
 ];
-
 export const expectedComment: IComment[] = [
     {
         postId: 6,

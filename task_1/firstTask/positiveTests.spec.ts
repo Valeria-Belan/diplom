@@ -2,7 +2,6 @@ import { RegisterForm } from './task1';
 
 describe('Positive tests for register form', () => {
     let registerTest: RegisterForm;
-
     beforeEach(() => {
         registerTest = new RegisterForm();
     });

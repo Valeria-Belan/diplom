@@ -55,7 +55,7 @@ class CurrencyPage {
         let today = date.toLocaleString('ru-RU', { day: 'numeric', month: 'long', });
         this.currentDateIsDispalyed.should('contain.text', today);
     }
-    threeCurrency() { //отображаются разделы курсов для USD, EUR, RUB
+    threeCurrenciesShown() { //отображаются разделы курсов для USD, EUR, RUB
         cy.contains('.b-currency-table__best', 'USD').should('contain', 'USD');
         cy.contains('.b-currency-table__best', 'EUR').should('contain', 'EUR');
         cy.contains('.b-currency-table__best', 'RUB').should('contain', 'RUB');
@@ -85,8 +85,8 @@ class CurrencyPage {
         this.currencyResultInByn.should('have.text', 'BYN');
     }
     resultNumberCurrency() { //Проверить, что подсчитанное значение = введенное * курс EUR из раздела "Банк продает"
-        cy.get('p.value.rise b')
-            .eq(1) //может измениться
+        cy.get('p.value.fall b')
+            .eq(2) //может измениться
             .then((cell) => {
                 const bankValue = cell.text().replace(',', '.'); // 3.0080
                 const randomNumber = inputValue;

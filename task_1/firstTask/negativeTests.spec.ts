@@ -2,11 +2,10 @@ import { RegisterForm } from './task1';
 
 describe('Negative tests for register form', () => {
     let registerTest: RegisterForm;
-
     beforeEach(() => {
         registerTest = new RegisterForm();
     });
-
+    
     test("Test_1: Email doesn't contain @", () => {
         const spy = jest.spyOn(console, 'log');
         registerTest.setEmail('testemailgmail.com');

@@ -8,7 +8,7 @@ class RegistrationPage {
     private linkToRegisterFormLocator = "(//a[contains(@class, 'auth-form__link')])[1]"; //Перейти по ссылке "Зарегистрироваться на Onliner"
     private registerFormPageTitleLocator = "//div[contains(@class, 'auth-form__title')]"; //Открылась форма регистрации
     private enterValidUserEmailLocator = "//*[@placeholder='Ваш e-mail']"; //Ввести валидный email
-    private acceptTermsOfUseLocator = "//span[@class='i-checkbox__faux']"; //Принять условия соглашения
+    private acceptTermsOfUseLocator = "//span[@class='auth-checkbox__faux']"; //Принять условия соглашения
     private clickOnRegisterButtonLocator = "//button[@type='submit']"; //Нажать на кнопку "Зарегистрироваться"
     private fieldsRedColorLocator = "(//input[contains(@class, 'auth-input_error')])[1]"; //Поля пароля подсвечены
     private setUserPasswordAlertLocator = "(//div[contains(@class, 'auth-form__description_error')])[1]"; //Отображается алерт "Укажите пароль"
